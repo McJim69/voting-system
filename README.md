@@ -25,15 +25,18 @@ By transitioning from manual paper-based elections to this online platform, orga
 - **PDF Reporting:** Instantly generate and print election results as PDF documents (powered by TCPDF).
 
 ## 🎨 Recent Updates (Modernization & Security)
-- **Modern UI Overhaul:** The frontend has been upgraded with a sleek CSS layer on top of the original Bootstrap 3 / AdminLTE framework. It features rounded corners, soft shadows, vibrant gradients, and the crisp *Inter* typeface.
+- **Framework Upgrade:** Fully migrated from legacy Bootstrap 3 to **Bootstrap 5.3**, completely revitalizing the UI component architecture.
+- **Modern UI Overhaul:** Applied a premium CSS layer (Cards, soft shadows, vibrant gradients, Inter typography) over the AdminLTE layout for a high-end feel.
+- **Asset Modernization:** Integrated **FontAwesome 6** and the latest **DataTables for Bootstrap 5** for snappier, better-looking interactions.
+- **Voter Tracking:** Added a "Status" column to the Admin Voters List to dynamically track if voters have already cast their ballot.
 - **Login Redesign:** The legacy tiled background has been replaced with a clean, centered, floating card layout for both Admin and Voter portals.
 - **Security Patches:** Critical SQL injection vulnerabilities in the authentication flows have been patched using secure parameter binding/escaping techniques.
 
 ## 🛠️ Technology Stack
 - **Backend:** PHP
 - **Database:** MySQL
-- **Frontend:** HTML5, custom CSS (Modern Theme), Bootstrap 3.3.7, AdminLTE
-- **Plugins/Libraries:** Chart.js, TCPDF, iCheck, DataTables
+- **Frontend:** HTML5, custom CSS (Modern Theme), **Bootstrap 5.3**, AdminLTE
+- **Plugins/Libraries:** Chart.js, TCPDF, iCheck, DataTables (BS5), FontAwesome 6
 
 ## ⚙️ Installation
 
