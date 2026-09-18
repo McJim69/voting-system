@@ -1,0 +1,242 @@
+/* modern-theme.css - Modernization Layer over Bootstrap 3 & AdminLTE */
+
+/* --- Typography --- */
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/* --- Global Elements --- */
+a {
+    text-decoration: none !important;
+}
+
+.user-panel > .info > p {
+    margin-bottom: 5px;
+}
+
+.card, .small-box, .login-box-body, .register-box-body {
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border: none !important;
+    background: #ffffff;
+}
+
+.card-header {
+    border-bottom: 1px solid #e2e8f0 !important;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 15px 20px;
+    background-color: transparent !important;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* --- Buttons --- */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.btn-flat {
+    border-radius: 8px !important; /* Override flat */
+}
+
+/* --- Inputs & Forms --- */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    padding: 10px 15px;
+    height: auto;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.has-feedback .form-control-feedback {
+    top: 5px;
+    right: 5px;
+    color: #94a3b8;
+}
+
+/* --- Dashboard Small Boxes --- */
+.small-box {
+    color: #fff !important; /* Keep text white for bg-* classes if they are still used */
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.small-box .inner {
+    padding: 20px;
+}
+
+.small-box h3 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.small-box p {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.small-box .icon {
+    top: 5px;
+    right: 15px;
+    opacity: 0.2;
+}
+
+.small-box:hover .icon {
+    font-size: 90px;
+    opacity: 0.3;
+}
+
+/* --- Login Page --- */
+body.login-page {
+    background: #f1f5f9 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100vh !important;
+    margin: 0;
+}
+
+.login-box {
+    width: 400px !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.login-logo {
+    margin-bottom: 0;
+    padding: 30px 20px 20px;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1e293b;
+}
+
+.login-logo x {
+    font-weight: 800;
+    background: -webkit-linear-gradient(45deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login-box-body {
+    background: #ffffff !important;
+    padding: 30px !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.login-box-msg {
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* --- Navbar / Layout --- */
+.main-header .navbar {
+    background: linear-gradient(90deg, #1e293b 0%, #334155 100%) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header .logo {
+    background: #0f172a !important;
+}
+
+.main-header .logo:hover {
+    background: #1e293b !important;
+}
+
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background: rgba(255,255,255,0.1) !important;
+}
+
+.content-wrapper {
+    background-color: #f8fafc;
+}
+
+/* --- Voter Candidate List --- */
+#candidate_list ul li {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 15px 0 !important;
+}
+
+#candidate_list ul li:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+
+.clist {
+    vertical-align: middle !important;
+}
+
+#candidate_list img.clist {
+    border-radius: 50%;
+    border: 3px solid #e2e8f0;
+    margin: 0 15px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.cname {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.platform {
+    float: right;
+    margin-top: 15px;
+}
+
+/* Make checkboxes/radios larger and aligned */
+input[type=checkbox].flat-red, input[type=radio].flat-red {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
